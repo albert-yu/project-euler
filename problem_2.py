@@ -7,26 +7,26 @@
 # find the sum of the even-valued terms.
 
 def main():
-	# initialize first two values
-	n_0 = 1
-	n_1 = 2
+    # initialize first two values
+    n_0 = 1
+    n_1 = 2
 
-	# track current sum
-	current_sum = 2
+    # track current sum
+    current_sum = 2
 
-	while n_1 < 4000000:
-		new_number = n_1 + n_0
-		if new_number % 2 == 0:
-			current_sum += new_number
+    while n_1 < 4000000:
+        new_number = n_1 + n_0
+        if new_number % 2 == 0:
+            current_sum += new_number
 
-		# move everything up
-		n_0 = n_1
-		n_1 = new_number
+        # move everything up
+        n_0 = n_1
+        n_1 = new_number
 
-	print(current_sum)
+    print(current_sum)
 
 
 
 
 if __name__ == "__main__":
-	main()
+    main()

@@ -4,17 +4,17 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 def main():
-	summands = []
+    summands = []
 
-	for i in range (1, 1000):
-		if i % 3 == 0 and i % 5 == 0:
-			summands.append(i)
-		elif i % 3 == 0:
-			summands.append(i)
-		elif i % 5 == 0: 
-			summands.append(i)
+    for i in range (1, 1000):
+        if i % 3 == 0 and i % 5 == 0:
+            summands.append(i)
+        elif i % 3 == 0:
+            summands.append(i)
+        elif i % 5 == 0: 
+            summands.append(i)
 
-	print(sum(summands))
+    print(sum(summands))
 
 if __name__ == "__main__":
-	main()
+    main()
